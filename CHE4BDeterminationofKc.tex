@@ -1,0 +1,222 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage[margin = 1in]{geometry}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage[labelfont = bf, skip = 5pt]{caption}
+\usepackage[version=4]{mhchem}
+\usepackage{graphicx}
+\setlength{\parskip}{1em}
+\setlength{\parindent}{2em}
+
+\title{CHE 4B Determination of Kc for a Complex Ion Formation}
+\author{Everest Tong-Zhou\\[1ex]
+	\small Lab Partner: Jude Gatchalian}
+\date{March 2026}
+
+
+\begin{document}
+	\maketitle
+	
+	\newpage
+	
+	\noindent\rule{\linewidth}{0.4pt}
+	\begin{abstract}
+		This experiment sought to determine the equilibrium constant ($\ce{K_c}$) of $\ce{Fe(H2O)6SCN^{2+}}$ complex ion formation using spectrophotometry and Beer's Law. By establishing a relationship between concentrations of $\ce{FeSCN^{2+}}$ and absorption using the "flooding" procedure. By using a highly concentrated solution of $\ce{Fe(H2O)6^3+}$ with $\ce{KSCN}$, it can be assumed a that 100\% of the $\ce{KSCN}$ reacts to create $\ce{FeSCN^{2+}}$. Measuring the absorbance of these standard known concentrations of $\ce{FeSCN^{2+}}$ at 447 nm, yields a molar absorptivity slope ( $\ce{\epsilon \times \textit{l}}\ [=]\ M^{-1}$ ) of 1737.9.
+		
+		Recording absorbance for solutions of $\ce{FeSCN^{2+}}$ at equilibrium concentrations, and using the molar absorptivity slope it is possible to calculate the actual concentrations of $\ce{FeSCN^{2+}}$ ions at equilibrium. Results of this procedure yield an average $\ce{K_c}$ of 118, excluding an undetectable outlier. A systematic shift in decreasing $\ce{K_c}$ was observed, which was interpreted as a result of improper calibration of pipettes, and poor equipment sensitivity or accuracy.
+	\end{abstract}
+	
+	\vspace{.15cm}
+	
+	\noindent\rule{\linewidth}{0.4pt}
+	
+	\section{Introduction}
+	
+$\ce{Fe(H2O)6SCN^{2+}}$ is a complex metal ion formed in this reaction:
+	\begin{equation} \label{eq:FormationOfFeSCN}
+		\ce{Fe(H2O)6^3+ (aq) + SCN^- (aq) <=> Fe(H2O)6SCN^{2+} (aq) + H2O (\textit{l})}
+	\end{equation}
+	Or alternatively, the reaction can be shortened to:
+	\begin{equation} \label{eq:FormationOfFeSCNShort}
+		\ce{Fe^3+ (aq) + SCN^- (aq) <=> FeSCN^{2+} (aq)}
+	\end{equation}
+	
+	We are interested in the equilibrium constant for the creation of this complex ion. Because the reaction that creates $\ce{FeSCN^{2+}}$ does not go to completion, Beer's Law is used to calculate the value of $\ce{K_c}$ for $\ce{FeSCN^{2+}}$.
+	
+	Beer's Law:
+	\begin{equation}\label{eq:BeersLaw}
+		A = \epsilon\ \times \textit{l}\ \times c
+	\end{equation}
+	
+	Where $\epsilon$ is the molar absorptivity, \textit{l} is the light's path length, and c is the concentration of the solute. Using a spectrophotometer measuring light at 447 nm, and standard solutions of known $\ce{FeSCN^{2+}}$ concentrations, it is possible to calculate  $\epsilon * \textit{l}$ using the slope of the graph of absorbance versus known concentrations. This can be used to solve for the concentration of $\ce{FeSCN^{2+}}$ ions partially dissolved in solution. Knowing the concentration of partially dissolved $\ce{FeSCN^{2+}}$ ions means that a value of $\ce{K_c}$ can be found for $\ce{FeSCN^{2+}}$.
+	
+	\begin{equation}\label{eq:Equilibrium Constant}
+		k_c = \frac{\left[ \ce{FeSCN^{2+}} \right]}{\left[ \ce{Fe^{3+}} \right] \left[ \ce{SCN^{-}} \right] }
+	\end{equation}
+	
+	\section{Procedure}
+	
+	\subsection*{Part A}
+	\hspace{2em} Get two clean 50 mL beakers. Fill one of them with 30 mL of $2.00*10^{-3}$ M $\ce{Fe(NO3)3}$ dissolved in 1 M $\ce{HNO3}$. Fill the other beaker with 20 mL of $2.0010^{-3}$ M $\ce{KSCN}$. Get 5 clean test tubes, label them and add 5 mL of $2.00*10^{-3}$ M $\ce{Fe(NO3)3}$ to each of them. Add $2.00*10^{-3}$ M $\ce{KSCN}$ and deionized water (DI) in accordance with the table below.
+	
+	\begin{table}[h]
+		\renewcommand{\arraystretch}{1.5}
+		\centering
+		\caption{Solution mixtures for part A}
+		\begin{tabular}{|c|c|c|c|}
+			\hline
+			\textbf{Mixture} & \textbf{ Volume $\ce{Fe(NO3)3}$ (mL)} & \textbf{Volume $\ce{KSCN}$ (mL)} & Deionized water (mL) \\
+			\hline \hline
+			1 & 5.00 & 5.00 & 0.00 \\
+			2 & 5.00 & 4.00 & 1.00 \\
+			3 & 5.00 & 3.00 & 2.00 \\
+			4 & 5.00 & 2.00 & 3.00 \\
+			5 & 5.00 & 1.00 & 4.00 \\
+			\hline
+			
+		\end{tabular}
+		\label{tab:PartASolutions}
+	\end{table}
+	
+	\noindent Set these solutions aside for part C.
+	
+	\subsection*{Part B-1}
+	
+	\hspace{2em} Before creating more solutions, create a standard solution of $\ce{FeSCN^2+}$. This solution will be made of \textbf{0.200 M} $\ce{Fe(NO3)3}$ and $2.00*10^{-3}$ M $\ce{KSCN}$. Fill a large test tube with 10 mL of $\ce{Fe(NO3)3}$, 2 mL of $\ce{KSCN}$, and 8.00 mL of DI. Mix this solution with a clean stir rod. 
+	
+	
+	\subsection*{Part B-2}
+	
+	\hspace{2em} Create dilutions of the solution made in part B-1. Using a volumetric pipette add DI. Also, create a blank of the stock solution of around 5 mL of 0.200 M $\ce{Fe(NO3)3}$. Another solution will be 5mL of the standard solution created in part B-1. The rest of the solutions are described in the table below.
+	
+	\begin{table}[h]
+	\renewcommand{\arraystretch}{1.5}
+	\centering
+	\caption{Solution mixtures for part A.}
+	\begin{tabular}{|c|c|}
+		\hline
+		\textbf{Tube} & \textbf{Composition}{} \\
+		\hline \hline
+		Blank & 0.200 M  $\ce{Fe(NO3)3}$ in 1 M $\ce{HNO3}$\\
+		1 & \textbf{Standard Solution} (Part B-1)\\
+		2 & 4.00 mL \textbf{Standard Solution} + 1.00 mL $\ce{H2O}$\\
+		3 & 4.00 mL \textbf{Standard Solution} + 2.00 mL $\ce{H2O}$\\
+		4 & 5.00 mL \textbf{Standard Solution} + 3.00 mL $\ce{H2O}$\\
+		\hline
+	\end{tabular}
+	\label{tab:PartBSolutions}
+	\end{table}
+	
+	For part B, assume that all of the $\ce{KSCN}$ reacts to form $\ce{FeSCN^2+}$. The data will show the actual absorptivity of $\ce{FeSCN^2+}$ that can be used to calculate the concentration of $\ce{FeSCN^{2+}}$ created in the solutions used in part A and the equilibrium constant constant of $\ce{FeSCN^{2+}}$ ions using equations \ref{eq:Equilibrium Constant} and \ref{eq:ConcentrationOfFeSCN2+}.
+	
+	
+	\subsection*{Part C}
+	\hspace{2em} Measure the absorbance of each of the solutions created in part A and B using a spectrophotometer. Measure the absorbance at 447 nm. Graph absorbance versus molar concentration for solutions made in part B. Make sure the cuvets are oriented correctly with the mark on the cuvet facing towards the front. Repeat with the solutions made in part A.
+	
+	\newpage
+	
+	\section*{\large{Data}}
+	\vspace{1cm}
+	% Part A data table
+	\begin{table}[h]
+		\renewcommand{\arraystretch}{1}
+		\centering
+		\caption{Part A solution spectrophotometry with $2.00*10^{-3}$ M $\ce{Fe(NO3)3}$ and $2.00*10^{-3}$ M $\ce{KSCN}$ using 447nm light. Concentrations of $\ce{FeSCN^2+}$ are calculated using equation \ref{eq:ConcentrationOfFeSCN2+}}
+		\begin{tabular}{>{\centering}m{6cm} >{\centering}m{3cm} >{\centering}m{3cm} >{\centering}m{2cm}}
+			\toprule
+			
+			\textbf{Solution Composition} & \textbf{Concentration of $\ce{FeSCN^2+}$} & \textbf{Absorbance} & \textbf{$\ce{K_c}$}\\
+			\cr \midrule
+			\cr 5.00 mL $\ce{Fe(NO3)3}$, 5.00 mL $\ce{KSCN}$ and 0.00 mL Water & 0.000121 & 0.21 & 156\\
+			\cr
+			\cr 5.00 mL $\ce{Fe(NO3)3}$, 4.00 mL $\ce{KSCN}$ and 1.00 mL Water & 0.0000863 & 0.15 & 132\\
+			\cr
+			\cr 5.00 mL $\ce{Fe(NO3)3}$, 3.00 mL $\ce{KSCN}$ and 2.00 mL Water & 0.0000460 & 0.08 & 87.1\\
+			\cr
+			\cr 5.00 mL $\ce{Fe(NO3)3}$, 2.00 mL $\ce{KSCN}$ and 3.00 mL Water & 0.0000345 & 0.06 & 97.8\\
+			\cr
+			\cr 5.00 mL $\ce{Fe(NO3)3}$, 1.00 mL $\ce{KSCN}$ and 4.00 mL Water & 0.00 & 0.00 & 0.00\\
+			\cr
+			\cr \bottomrule
+		\end{tabular}
+		\label{tab:PartA}
+	\end{table}
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width = 12cm]{CHE4BDeterminationofKcFig1.jpg}
+		\caption{Absorbance vs concentration of $\ce{FeSCN^2+}$ for solutions in part A.}
+		\label{fig:PartAAbsvsCon}
+	\end{figure}
+	
+	\begin{table}[h]
+		\renewcommand{\arraystretch}{1}
+		\centering
+		\caption{Part A solution spectrophotometry with $2.00*10^{-3}$ M $\ce{Fe(NO3)3}$ and $2.00*10^{-3}$ M $\ce{KSCN}$ using 447 nm light.}
+		\begin{tabular}{>{\centering}m{6cm} >{\centering}m{3cm} >{\centering}m{3cm} }
+			\toprule
+			
+			\textbf{Solution Composition} & \textbf{Concentration of $\ce{FeSCN^2+}$} & \textbf{Absorbance} \\
+			\cr \midrule
+			\cr Blank ($\ce{0.200 M Fe(NO3)3}$ in 1 M $\ce{HNO3}$) & 0.00 & 0.00 \\
+			\cr
+			\cr Standard & 0.000200 & 0.35 \\
+			\cr
+			\cr 4.00 mL standard + 1.00 mL Water & 0.000160 & 0.26 \\
+			\cr
+			\cr 4.00 mL standard + 2.00 mL Water & 0.000133 & 0.24 \\
+			\cr
+			\cr 4.00 mL standard + 3.00 mL Water & 0.000114 & 0.21 \\	
+			\cr
+			\cr \bottomrule
+		\end{tabular}
+		\label{tab:PartB}
+	\end{table}
+	
+	
+	
+\newpage
+
+	\begin{figure}
+		\centering
+		\includegraphics[width = 12cm]{CHE4BDeterminationofKcFig2.jpg}
+		\caption{Absorbance vs concentration of $\ce{FeSCN^2+}$ for solutions in part B.}
+		\label{fig:PartBAbsvsCon}
+	\end{figure}
+	\clearpage
+	
+	
+	\section{Results}
+
+	\hspace{2em} Using the slope from the standardized absorbance of $\ce{FeSCN^{2+}}$ from figure \ref{fig:PartBAbsvsCon}. The concentrations of different $\ce{FeSCN^{2+}}$ solutions can be calculated at different absorbance measurements in part A (see Table \ref{tab:PartA}). This gives a perfectly proportional relationship between the absorbance and concentration of $\ce{FeSCN^{2+}}$ in part A (see Figure \ref{fig:PartBAbsvsCon}).
+	
+	The slope of 1737.9 can be used to calculate the concentration of $\ce{FeSCN^{2+}}$ given an absorbance measurement because of Beer's Law.
+	The slope of figure \ref{fig:PartBAbsvsCon} is equivalent to $\epsilon * \textit{l}$. Solving equation \ref{eq:BeersLaw} for concentration and substituting $\epsilon * \textit{l}$ for slope gives an equation for concentration in terms of known quantities. The value of the slope was found to be $\ce{1737.9 M^{-1}}$.
+	
+	\begin{equation}\label{eq:ConcentrationOfFeSCN2+}
+		c = \frac{A}{slope}
+	\end{equation}
+	
+	Using the calculated concentration of $\ce{FeSCN^{2+}}$, it is possible to solve for Kc using equation \ref{eq:Equilibrium Constant}. These values have an average of 118 excluding the solution with undetectable amounts of $\ce{FeSCN^{2+}}$ ions, and an average of 94.7 including that data point. Since the test tube with 0 absorbance is considered an outlier it is excluded, the standard deviation excluding that point is 31.8. In general the $\ce{K_c}$ values trend down as the concentration of $\ce{FeSCN^{2+}}$ decreases (see Table \ref{tab:PartA}).
+	
+	%As the volume of $2.00*10^{-3}$ M $\ce{KSCN}$ decreases, the concentration of $\ce{FeSCN^{2+}}$ decreases. The color of $\ce{FeSCN^{2+}}$ is reddish-orange and absorbs light. Thus the absorbance of the solution decreases as the concentration of $\ce{FeSCN^{2+}}$ decreases and becomes more clear (see Table \ref{tab:PartA}). The relationship between concentration of $\ce{FeSCN^{2+}}$ and absorbance is linear, as predicted by Beer's Law, and is reflected in figure \ref{fig:PartBAbsvsCon}. The slope of the graph is the molar absorptivity multiplied by the path length that the light takes
+
+	%Similarly to part A, part B shows that s the concentration of $\ce{FeSCN^{2+}}$ decreases, the absorbance decreases as well (see Table \ref{tab:PartB}). The relationship is linear as shown in figure \ref{fig:PartBAbsvsCon}, and the slope also represents molar absorptivity multiplied by the path length of light as in part A.
+	
+	\vspace*{1cm}
+	
+	\section{Discussion}
+	\hspace*{2em}In part B, the concentration of $\ce{Fe(NO3)3}$ is 100 times higher than the solution used in part A. So by Le Chatelier's Principle, it can be assumed that about 100\% of the $\ce{KSCN}$ reacts to create $\ce{FeSCN^{2+}}$. This standard solution with known concentrations of $\ce{FeSCN^{2+}}$ can be used to calculate the molar absorptivity multiplied by the path length of light through the spectrophotometer. This value is the slope of figure \ref{fig:PartBAbsvsCon}. It is expected to be linear as Beer's Law predicts that the concentration of a solute is proportional to the absorptivity of a solution (see Eq \ref{eq:BeersLaw}).
+	
+	After calculating the $\ce{K_c}$ values for $\ce{FeSCN^{2+}}$ at different concentrations, it is found that in this experiment, the value of $\ce{K_c}$ varies with the concentration of $\ce{FeSCN^{2+}}$. However, on average, the value of $\ce{K_c}$ was found to be 118. Attempting to find sources that refer to an accepted value for $\ce{K_c}$ yield results that range from as low as 50 to 200.
+	
+	It is noted that the values of $\ce{K_c}$ trend down as the concentration of $\ce{FeSCN^{2+}}$ decrease. A potential source of uncertainty that would result in lower than expected values of $\ce{K_c}$ is that the spectrophotometer is nearing the limit of what the machine can accurately measure at such low concentrations $\ce{FeSCN^{2+}}$. Another source of error is from the pipette itself. The pipette used in the experiment left more solution in the tip than expected, which suggests it is not properly calibrated. Therefore, less $\ce{KSCN}$ is dispensed than expected. If this is the case, then it would affect the solutions that have lower volumes of $\ce{KSCN}$ more than those with higher volumes of $\ce{KSCN}$. Accordingly, the test tubes with fewer milliliters of $\ce{KSCN}$ than expected will have lower absorbance, which leads to a lower calculated concentration of $\ce{FeSCN^{2+}}$, and thus a lower equilibrium constant (see equations \ref{eq:Equilibrium Constant} and \ref{eq:ConcentrationOfFeSCN2+}).
+	
+	\section{Conclusion}
+	\hspace*{2em} The equilibrium concentration of $\ce{FeSCN^{2+}}$ is around 118. Using Beer's Law and a standard solution of know $\ce{FeSCN^{2+}}$ ion concentration it is possible to create a model of absorptivity and $\ce{FeSCN^{2+}}$ concentration to calculate a predicted concentration and equilibrium position of an unknown $\ce{FeSCN^{2+}}$ ions. The method used in this experiment relies on very accurate volumes and concentrations of solutions and is highly sensitive to even small discrepancies in volume or concentration. Future experiments may address this need by using larger volumes of solutions such that small discrepancies in volume haves less of an effect on the results, or by using more accurate volume measurements. Assume the concentrations of the solutions given in the experiment are accurately labeled.
+	
+	
+	
+\end{document}
+
