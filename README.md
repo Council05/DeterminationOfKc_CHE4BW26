@@ -1,7 +1,7 @@
 # [Determination of K<sub>c</sub> for a Complex Ion Formation](https://github.com/Council05/DeterminationOfKc_CHE4BW26/blob/main/CHE4BDeterminationofKc.pdf)
 
 ## Overview
-Lab report on determining the equilibrium constant (Kc) of the formation of a complex ion written in LaTeX. 
+Lab report on determining the equilibrium constant (Kc) of the formation of a complex ion written in [LaTeX](https://github.com/Council05/DeterminationOfKc_CHE4BW26/blob/main/CHE4BDeterminationofKc.tex). 
 
 ## Why I Made It
 This was a lab report done in my general chemistry class (CHE 4B) in the winter quarter of 2026. 
